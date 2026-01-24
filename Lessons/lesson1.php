@@ -1,0 +1,38 @@
+<?php 
+ echo "Hello, World! This is the index.php file. <br>";
+
+ echo " This file is located at: " . __FILE__ . "<br>";
+ echo " and the current directory is: " . __DIR__ . "<br>";
+ echo " The current PHP version is: " . phpversion() . "<br>";
+ echo " The server software is: " . $_SERVER['SERVER_SOFTWARE'] . "<br>";
+ echo " The request method is: " . $_SERVER['REQUEST_METHOD'] . "<br>";
+ echo " The script name is: " . $_SERVER['SCRIPT_NAME'] . "<br>";
+ echo " The document root is: " . $_SERVER['DOCUMENT_ROOT'] . "<br>";
+ echo " The current time is: " . date('Y-m-d H:i:s') . "<br>";
+ echo " The server time zone is: " . date_default_timezone_get() . "<br>";
+ echo " The PHP configuration file is: " . php_ini_loaded_file() . "<br>";
+ echo " The PHP extensions loaded are: " . implode(', ', get_loaded_extensions()) . "<br>";
+ echo " The memory limit is: " . ini_get('memory_limit') . "<br>";
+ echo " The max execution time is: " . ini_get('max_execution_time') . " seconds.<br>";
+ echo " The max input time is: " . ini_get('max_input_time') . " seconds.<br>";
+ echo " The upload max filesize is: " . ini_get('upload_max_filesize') . "<br>";
+ echo " The post max size is: " . ini_get('post_max_size') . "<br>";
+ echo " The session save path is: " . session_save_path() . "<br>";
+ echo " The session name is: " . session_name() . "<br>";
+ echo " The session ID is: " . session_id() . "<br>";
+ echo " The session status is: " . session_status() . "<br>";
+ echo " The PHP error reporting level is: " . error_reporting() . "<br>";
+ echo " The display errors setting is: " . ini_get('display_errors') . "<br>";
+ echo " The log errors setting is: " . ini_get('log_errors') . "<br>";
+ echo " The error log file is: " . ini_get('error_log') . "<br>";
+ echo " The default charset is: " . ini_get('default_charset') . "<br>";
+ echo " The default timezone is: " . date_default_timezone_get() . "<br>";
+ echo " The script execution time limit is: " . ini_get('max_execution_time') . " seconds." . "<br>";
+ echo " The current user is: " . get_current_user() . "<br>";
+ echo " The server name is: " . $_SERVER['SERVER_NAME'] . "<br>";
+ echo " The server protocol is: " . $_SERVER['SERVER_PROTOCOL'] . "<br>";
+ echo " The server port is: " . $_SERVER['SERVER_PORT'] . "<br>";
+ echo " The request URI is: " . $_SERVER['REQUEST_URI'] . "<br>";
+ echo " The query string is: " . $_SERVER['QUERY_STRING'] . "<br>";
+ echo " The HTTP headers are: " . json_encode(getallheaders()) . "<br>";
+ echo " The PHP SAPI is: " . php_sapi_name() . "<br>";
