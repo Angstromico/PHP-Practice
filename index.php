@@ -1,2 +1,2 @@
 <?php 
- require_once 'Lessons/lesson2.php';
+ require_once 'Lessons/lesson3.php';
