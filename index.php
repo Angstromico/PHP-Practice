@@ -1,2 +1,2 @@
 <?php 
- require_once 'Lessons/if.php';
+ require_once 'Lessons/while.php';
