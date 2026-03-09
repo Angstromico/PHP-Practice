@@ -13,7 +13,7 @@ declare(strict_types=1);
 * @return string The text with the line break at the end.
 
 */
-function appendNewLine(string $text) 
+function appendNewLine(string|int $text)  
 {
-    return $text . "\n";
+ return $text . "\n";
 }
